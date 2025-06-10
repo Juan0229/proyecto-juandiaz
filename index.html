@@ -7,7 +7,7 @@
 </head>
 <style>
         body {
-            background-color: #74767c; /* Example color */
+            background-color: #6f6cff; /* Example color */
         }
         h1 {
            font-size: 25px;
@@ -20,19 +20,56 @@
         .p01 {
             font-size: 20px;
             color: rgb(0, 255, 255);
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
            
         }
         .p02 {
-            font-size: 25px;
-            color: rgb(255, 255, 255);
+            font-size: 20px;
+            color: rgb(0, 255, 42);
             text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img01 {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0px auto;
+        }
+        .table01 {
+           /* border: #ffffff;*/
+            
+           border: 1px solid rgb(255, 0, 0);
+            width: 50%;
+            margin: 0 auto;
+            
+        }
+        th {
+            background-color: #01ff2b;
+           color: white
+            font family: Arial, Helvetica, sans-serif;
+            font size: 15px;
+        }
+        td {
+           border: 1px solid #000;
+           font: arial;
+           font-size: 15px;
+           text-align: center;
+        }
+        .img03 {
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 0px auto;
         }
 </style>
 </head>
 <body>
     <h1>Pagina de Equipos</h1>
     <div>
-    <u>
+    <u id="home">
     <li><a href="#marcador01">HOME</a></li>
     <li><a href="#marcador02">Computador</a></li>
     <li><a href="#marcador03">Precios</a></li> 
@@ -48,17 +85,21 @@
         <div>
             <h2 id="marcador02">Computador</h2>
             <p class="p02">Una computadora, computador u ordenador es una máquina programable que ejecuta una serie de comandos para procesar los datos de entrada, obteniendo convenientemente información que posteriormente se envía a las unidades de salida. Una computadora está compuesta por numerosos y diversos circuitos integrados y varios elementos de apoyo, extensión y accesorios, que en conjunto pueden ejecutar tareas diversas con suma rapidez y bajo el control de un programa (software).</p>
-            <img src="/imagenes/imagen1.jpg" alt="imagen1" title="Computador" width="300" height="200">
+            <img class="img01" src="/imagenes/imagen1.jpg" alt="imagen1" title="Computador" width="300" height="200">
+              
+            <a href="index.html" >Ir al inicio</a>
+                
         </div>
         <div>
             <h2 id="marcador03">Precios</h2>
-            <table border="1">
+            <table class="table01">
                 <caption>Lista de precios</caption>
                 <tr>
                     <th>Item</th>
                     <th>Detalle</th>
                     <th>V. Unitario</th>
                     <th>Total</th>
+                    
                 </tr>
                 <tbody>
                     <tr>
@@ -81,13 +122,16 @@
                         </tbody>
                         <td colspan="3"> Total</td>
                         <td>$ 5.550.000</td>
+                        
                       </tr>
+                      
                     </table>
+                    <a href="index.html" >Ir al inicio</a>
                 </div>
              <div>
 
                     <h2 id="marcador04">Articulos</h2>
-                <table border="1"vcellpadding="10" cellspacing="0">
+                <table border="1" cellpadding="10" cellspacing="0">
                     <caption>Lista de articulos</caption>
                     <thead>
                     <tr>
@@ -98,27 +142,24 @@
                     </thead>
                 <tr>
                 <td>Portatil</td>    
-                <td><img src="/imagenes/imagen2.jpg" alt=""></td>  
+                <td><img class="img03" src="/imagenes/imagen2.jpg" alt=""></td>  
                 <td>Portatil ACER 4569</td>   
                 </tr>
                 <tr>
                 <td>computadro</td>    
-                <td><img src="/imagenes/image3.jpg" alt=""> </td>  
+                <td><img class="img03" src="/imagenes/image3.jpg" alt=""></td>  
                 <td>DELL ASP 436, memoria 64gb, DD 512 gb </td>  
                 </tr>
                 <tr>
                 <td>Impresora</td>    
-                <td><img src="/imagenes/impresora.jpg" alt=""> </td>  
+                <td><img class="img03" src="/imagenes/impresora.jpg" alt=""></td>  
                 <td>Impresora Cannon 895</td>  
                 </tr>
+                
                
 </table> 
 </div>
-<body>
-                <div>
-                <a href="index.html" >Ir a pagina principal</a>
-                </div>
-                </body>
-                
+<body>         
+    <a href="index.html" >Ir al inicio</a> 
 </body>
 </html>
